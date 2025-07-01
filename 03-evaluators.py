@@ -40,3 +40,19 @@ def compare_semantic_similarity(inputs: dict, reference_outputs: dict, outputs: 
 
     similarity_score = completion.choices[0].message.parsed
     return {"score": similarity_score.similarity_score, "key": "similarity"}
+
+# inputs = {
+#   "question": "Is LangSmith natively integrated with LangChain?"
+# }
+# reference_outputs = {
+#   "output": "Yes, LangSmith is natively integrated with LangChain, as well as LangGraph."
+# }
+
+
+# # From Run
+# outputs = {
+#   "output": "No, LangSmith is NOT integrated with LangChain."
+# }
+
+# similarity_score = compare_semantic_similarity(inputs, reference_outputs, outputs)
+# print(f"Semantic similarity score: {similarity_score}")    
