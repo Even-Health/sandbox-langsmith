@@ -1,4 +1,4 @@
-# LangSmith Sandbox
+# Sandbox: LangSmith
 
 LangSmith
 https://smith.langchain.com/
